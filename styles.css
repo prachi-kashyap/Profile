@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+}
+
+header {
+  top: 0;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+/* Code for navbar */
+.navigation ul {
+  background-color: var(--black);
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a {
+  color: var(--white);
+  display: block;
+  padding: 20px 28px;
+  text-align: center;
+  text-decoration: 0;
+}
+
+.navigation li a:hover {
+  background-color: var(--violetred);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.object-navigation {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+}
