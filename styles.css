@@ -3,12 +3,23 @@
 }
 
 :root {
+  /* Light theme */
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
   --teal: #006060;
   --violetred: #a2106d;
   --orange: #ffa500;
+  --text-color: #080808;
+  --background-color: #fefefe;
+  --accent-color: #a2106d;
+}
+
+body.dark-theme {
+  /* Dark theme */
+  --text-color: #fefefe;
+  --background-color: #080808;
+  --accent-color: #ffa500;
 }
 
 header {
@@ -19,6 +30,36 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
+  padding-top: 50px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.theme {
+  position: fixed;
+  top: 70px;
+  left: 93%;
+  padding: 5px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.about-text {
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 50%;
+}
+
+.about-image {
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 40%;
 }
 
 /* Code for navbar */
@@ -29,6 +70,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .navigation li {
@@ -61,4 +106,39 @@ footer {
   width: 100%;
   height: auto;
   border: none;
+}
+
+#contact-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  /* background: #f0f0f0; */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 60px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+  border: 2px solid var(--white);
+  border-radius: 10px;
 }
