@@ -40,6 +40,7 @@ body {
   top: 70px;
   left: 93%;
   padding: 5px;
+  z-index: 100px;
 }
 
 .about-section {
@@ -74,6 +75,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
+  margin-bottom: 20px;
 }
 
 .navigation li {
@@ -97,8 +99,9 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #f8f8f8;
   padding: 10px 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .object-navigation {
@@ -112,7 +115,7 @@ footer {
   width: 300px;
   margin: 0 auto;
   padding: 15px;
-  /* background: #f0f0f0; */
+  border: var(--black);
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -131,14 +134,30 @@ footer {
   margin-bottom: 60px;
 }
 
+.col-md-6 img {
+  width: 40px;
+  margin: none;
+}
+
 .title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
   padding: 10px;
-  margin: 0 auto;
-  width: 90%;
+  margin-bottom: 20px;
+  width: 100%;
   border: 2px solid var(--white);
-  border-radius: 10px;
+  border-block-color: var(--black);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  z-index: 100;
+}
+
+.container {
+  width: 60%;
+}
+
+.sections {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

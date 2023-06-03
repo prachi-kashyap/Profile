@@ -55,34 +55,67 @@
         width="250"
         height="250"
       />
+      <a href="../images/Prachi Kashyap.pdf" target="_blank">
+        <button class="btn">View my Resume</button>
+      </a>
+      <a href="../images/Prachi Kashyap.pdf" download>
+        <button class="btn">Download my Resume</button>
+      </a>
     </section>
 
-    <section id="education">
+    <section class="sections" id="education">
       <h2 class="title">EDUCATION</h2>
       <div class="container" id="education-container"></div>
     </section>
 
-    <section id="experience">
+    <section class="sections" id="experience">
       <h2 class="title">EXPERIENCES</h2>
       <div class="container" id="experience-container"></div>
     </section>
 
-    <section id="projects">
+    <section class="sections" id="projects">
       <h2 class="title">PROJECTS</h2>
       <div class="container" id="projects-container"></div>
     </section>
 
     <section id="contact">
       <h2 class="title">CONTACT</h2>
-      <form id="contact-form">
-        <label for="name">Name</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Email</label><br />
-        <input type="email" id="email" name="email" /><br />
-        <label for="message">Message</label><br />
-        <textarea id="message" name="message"></textarea><br />
-        <input type="submit" value="Submit" />
-      </form>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="contact-form">
+            <label for="name">Name</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="message">Message</label><br />
+            <textarea id="message" name="message"></textarea><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="col-md-6">
+          <a href="https://www.linkedin.com/in/prachikashyap/" target="_blank">
+            <img
+              class="logo"
+              src="../images/linkedin-logo.png"
+              alt="LinkedIn Logo"
+            />
+          </a>
+          <a href="https://github.com/prachi-kashyap" target="_blank">
+            <img
+              class="logo"
+              src="../images/github-logo.png"
+              alt="GitHub Logo"
+            />
+          </a>
+          <a href="https://leetcode.com/user5423df/" target="_blank">
+            <img
+              class="logo"
+              src="../images/leetcode-logo.png"
+              alt="LeetCode Logo"
+            />
+          </a>
+        </div>
+      </div>
     </section>
     <footer class="footertext">&copy; 2023 | prachikashyap</footer>
   </body>

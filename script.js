@@ -50,32 +50,29 @@ document.addEventListener("DOMContentLoaded", function () {
       roles: [
         {
           title: "Quality Engineering Senior Analyst",
+          project: "Salesforce Development",
           startDate: "12/2021",
           endDate: "07/2022",
           responsibilities: [
-            "Worked as a 3*Certified Salesforce Developer in multiple projects using agile methodology",
-            "Integrated CRM with the Service System to decrease manual interactions cutting overhead costs by 30%",
-            "Analyzed and built a dynamic customer community intake form for new joiner training and orientation program leveraging Lightning Web Components, saving almost 60% of the time for the same process",
+            "I utilized Lightning Web Components (LWC) to create a dynamic customer community intake form for an important client of our company's new joiner training and orientation program. The form incorporated personalized field rendering based on specific criteria, input validation using LWC's built-in form validation features, and interactive elements such as dropdown menus, date pickers, and auto-suggest fields. Leveraging the reusability and modularity of LWC components, the development time was significantly reduced, saving approximately 60%. The implementation of the dynamic intake form improved data accuracy, reduced administrative effort, and enhanced the overall efficiency of the onboarding process.",
           ],
         },
         {
           title: "Application Development Analyst",
+          project: "Salesforce CRM",
           startDate: "02/2020",
           endDate: "11/2021",
           responsibilities: [
-            "Designed and supported solutions to meet business needs in Salesforce, including, configurations, customizations, and integrations, using CS Fundamentals concepts for coding",
-            "Mentored and trained new hires in the project and conducted technical training on Salesforce",
-            "Coordinated with functional leads to transform and develop new requirements into designs with proper technical documentation and optimized implementations",
+            "I worked in a project for a insurance company that wanted a complete overhaul of their CRM system to improve operational efficiency. The main requirement was to build a custom CRM solution using Salesforce that mirrored their unique business process. Our first task was to create custom objects in Salesforce to handle data unique to their business. This required a deep understanding of their business model and data requirements. These custom objects allowed us to capture and represent business data that couldn't be handled by Salesforce's standard objects. We used Apex, Salesforce's proprietary language, to implement custom business logic. This included creating classes, triggers, and test cases. Apex triggers were especially important for automating workflows based on certain conditions. This saved significant time as it automated many tasks that were previously manual. Validation rules were created to ensure data integrity by enforcing business rules at the field level. We used Salesforce Object Query Language (SOQL) for querying the Salesforce database, allowing us to generate custom reports based on these queries. Finally, we created custom dashboards using Salesforce's dashboard functionality. These dashboards allowed management to monitor key performance metrics in real-time, providing valuable insights into the business's performance.",
           ],
         },
         {
           title: "Application Development Associate",
+          project: "Testing",
           startDate: "04/2018",
           endDate: "01/2020",
           responsibilities: [
-            "Worked with a development team, executed a component-based approach, and developed automation scripts to decrease maintenance costs by 50%",
-            "Implemented Test Design Automation to deliver high-quality applications for clients on time",
-            "Formulated effective test plans to ensure they adhere to client and user requirements",
+            "Worked as a 3*Certified Salesforce Developer in multiple projects using agile methodology , Integrated CRM with the Service System to decrease manual interactions cutting overhead costs by 30%,Analyzed and built a dynamic customer community intake form for new joiner training and orientation program leveraging Lightning Web Components, saving almost 60% of the time for the same process",
           ],
         },
       ],
@@ -101,6 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="card-text"><small class="text-muted">${
                           experience.location
                         }</small></p>
+                        <p class="card-text"><class="text-muted">${
+                          role.project
+                        }</p>
                         <ul class="list-group list-group-flush">
                             ${role.responsibilities
                               .map(
@@ -138,13 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "Proposed and created a website that will take customer reviews/tweets(text) data as input and provide overall sentiment as positive or negative. Learnt streamlit which is an open-source app framework for this project",
       technologies: ["Python", "Streamlit"],
-    },
-    {
-      title: "Movie Selection Catalogue",
-      duration: "08/2017 - 01/2018",
-      description:
-        "Collaborated closely with a group of five people to structure a movie catalog using the concepts of a relational database that enables users to keep track of their favorite films library and suggest films based on that",
-      technologies: ["HTML", "CSS", "JavaScript", "Node.js", "AJAX", "MySQL"],
     },
   ];
 
