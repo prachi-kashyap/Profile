@@ -22,9 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const educationContainer = document.getElementById("education-container");
 
+  educationContainer.classList.add(
+    "d-flex",
+    "flex-column",
+    "align-items-center"
+  );
+
   degrees.forEach((degree) => {
     const card = document.createElement("div");
-    card.classList.add("card", "mb-3");
+    card.classList.add("card", "mb-3", "w-75");
     card.innerHTML = `
           <div class="row g-0">
               <div class="col-md-4 p-2 d-flex align-items-center justify-content-center">
@@ -82,12 +88,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const experienceContainer = document.getElementById("experience-container");
 
   experiences.forEach((experience) => {
+    const experienceRow = document.createElement("div");
+    experienceRow.classList.add("row", "justify-content-md-center");
+
     experience.roles.forEach((role) => {
       const card = document.createElement("div");
-      card.classList.add("card", "mb-3");
+      card.classList.add("card", "mb-3", "col-md-5", "mx-2");
       card.innerHTML = `
             <div class="row g-0">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="card-body">
                         <h5 class="card-title">${role.title} at ${
         experience.company
@@ -98,9 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="card-text"><small class="text-muted">${
                           experience.location
                         }</small></p>
-                        <p class="card-text"><class="text-muted">${
+                        <p class="card-text"><small class="text-muted">${
                           role.project
-                        }</p>
+                        }</small></p>
                         <ul class="list-group list-group-flush">
                             ${role.responsibilities
                               .map(
@@ -113,8 +122,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         `;
-      experienceContainer.appendChild(card);
+      // Append the card to the row
+      experienceRow.appendChild(card);
     });
+
+    // Append the row to the container
+    experienceContainer.appendChild(experienceRow);
   });
 
   const projects = [
@@ -142,10 +155,14 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const projectsContainer = document.getElementById("projects-container");
-
+  projectsContainer.classList.add(
+    "d-flex",
+    "flex-wrap",
+    "justify-content-center"
+  );
   projects.forEach((project) => {
     const card = document.createElement("div");
-    card.classList.add("card", "mb-3");
+    card.classList.add("card", "mb-3", "col-md-5", "mx-2");
     card.innerHTML = `
           <div class="row g-0">
               <div class="col-md-8">

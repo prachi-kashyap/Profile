@@ -15,105 +15,190 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="navigation">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="#experience">Experience</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <button class="theme" onclick="toggleTheme()">Toggle Theme</button> -->
     </div>
-    <button class="theme" onclick="toggleTheme()">Toggle Theme</button>
-    <section id="about" class="about-section">
-      <p class="about-text">
-        I am Prachi Kashyap, a dedicated computer science professional with a
-        focus on IT and Salesforce development. My education includes an MS in
-        Computer Science from Portland State University and a Bachelor's in IT
-        from Kalinga Institute of Industrial Technology. I'm proficient in a
-        wide range of programming languages and software systems. My career has
-        spanned various roles at Accenture in India, where I've made significant
-        contributions as a certified Salesforce Developer and Quality
-        Engineering Senior Analyst, consistently delivering innovative solutions
-        that drive cost efficiencies. I'm proud to have my work recognized with
-        the Accenture Celebrate Excellence Award and Apex Award. My project
-        leadership includes the development of the PPE Detector web app and a
-        Sentiment Analysis Tool. As a mentor and a team player, I bring a blend
-        of experience, technical prowess, and leadership to any tech-focused
-        endeavor.
-      </p>
-      <img
-        class="image_about"
-        src="../images/prachi.jpg"
-        alt="A casual portrait of Prachi Kashyap"
-        width="250"
-        height="250"
-      />
-      <a href="../images/Prachi Kashyap.pdf" target="_blank">
-        <button class="btn">View my Resume</button>
-      </a>
-      <a href="../images/Prachi Kashyap.pdf" download>
-        <button class="btn">Download my Resume</button>
-      </a>
+    <h1 class="pl-5">PRACHI KASHYAP</h1>
+    <p class="pl-5">
+      <a href="mailto:prachikashyap@pdx.edu">prachikashyap@pdx.edu</a>
+    </p>
+    <section id="about" class="about-section mx-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p class="about-text">
+              I am Prachi Kashyap, a dedicated computer science professional
+              with a focus on IT and Salesforce development. My education
+              includes an MS in Computer Science from Portland State University
+              and a Bachelor's in IT from Kalinga Institute of Industrial
+              Technology. I'm proficient in a wide range of programming
+              languages and software systems. My career has spanned various
+              roles at Accenture in India, where I've made significant
+              contributions as a certified Salesforce Developer and Quality
+              Engineering Senior Analyst, consistently delivering innovative
+              solutions that drive cost efficiencies. I'm proud to have my work
+              recognized with the Accenture Celebrate Excellence Award and Apex
+              Award. My project leadership includes the development of the PPE
+              Detector web app and a Sentiment Analysis Tool. As a mentor and a
+              team player, I bring a blend of experience, technical prowess, and
+              leadership to any tech-focused endeavor.
+            </p>
+          </div>
+          <div
+            class="col-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="image_about"
+              src="../images/prachi.jpg"
+              alt="A casual portrait of Prachi Kashyap"
+              width="250"
+              height="250"
+            />
+          </div>
+          <a
+            href="../images/Prachi Kashyap.pdf"
+            target="_blank"
+            class="btn btn-primary mt-3 mb-3 mr-2"
+          >
+            View my Resume
+          </a>
+          <a
+            href="../images/Prachi Kashyap.pdf"
+            download
+            class="btn btn-secondary mt-3 mb-3"
+          >
+            Download my Resume
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="sections" id="education">
-      <h2 class="title">EDUCATION</h2>
-      <div class="container" id="education-container"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-3 mb-4 border rounded text-center title-box">
+              <h2 class="title m-0">EDUCATION</h2>
+            </div>
+          </div>
+        </div>
+        <div id="education-container" class="row"></div>
+      </div>
     </section>
 
     <section class="sections" id="experience">
-      <h2 class="title">EXPERIENCES</h2>
-      <div class="container" id="experience-container"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-3 mb-4 border rounded text-center">
+              <h2 class="title m-0">EXPERIENCES</h2>
+            </div>
+          </div>
+        </div>
+        <div id="experience-container" class="row"></div>
+      </div>
     </section>
 
     <section class="sections" id="projects">
-      <h2 class="title">PROJECTS</h2>
-      <div class="container" id="projects-container"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-3 mb-4 border rounded text-center">
+              <h2 class="title m-0">PROJECTS</h2>
+            </div>
+          </div>
+        </div>
+        <div id="projects-container" class="row"></div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2 class="title">CONTACT</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form id="contact-form">
-            <label for="name">Name</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <label for="email">Email</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="message">Message</label><br />
-            <textarea id="message" name="message"></textarea><br />
-            <input type="submit" value="Submit" />
-          </form>
+    <section class="sections" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-3 mb-4 border rounded text-center">
+              <h2 class="title m-0">CONTACT</h2>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <a href="https://www.linkedin.com/in/prachikashyap/" target="_blank">
-            <img
-              class="logo"
-              src="../images/linkedin-logo.png"
-              alt="LinkedIn Logo"
-            />
-          </a>
-          <a href="https://github.com/prachi-kashyap" target="_blank">
-            <img
-              class="logo"
-              src="../images/github-logo.png"
-              alt="GitHub Logo"
-            />
-          </a>
-          <a href="https://leetcode.com/user5423df/" target="_blank">
-            <img
-              class="logo"
-              src="../images/leetcode-logo.png"
-              alt="LeetCode Logo"
-            />
-          </a>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="contact-form" class="border p-3 rounded">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              <button type="reset" class="btn btn-secondary mb-2">Reset</button>
+            </form>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <a
+              href="https://www.linkedin.com/in/prachikashyap/"
+              target="_blank"
+            >
+              <img
+                class="logo mb-3"
+                src="../images/linkedin-logo.png"
+                alt="LinkedIn Logo"
+              />
+            </a>
+            <a href="https://github.com/prachi-kashyap" target="_blank">
+              <img
+                class="logo mb-3"
+                src="../images/github-logo.png"
+                alt="GitHub Logo"
+              />
+            </a>
+            <a href="https://leetcode.com/user5423df/" target="_blank">
+              <img
+                class="logo mb-3"
+                src="../images/leetcode-logo.png"
+                alt="LeetCode Logo"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
