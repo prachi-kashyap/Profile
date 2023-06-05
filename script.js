@@ -59,27 +59,24 @@ document.addEventListener("DOMContentLoaded", function () {
           project: "Salesforce Development",
           startDate: "12/2021",
           endDate: "07/2022",
-          responsibilities: [
-            "I utilized Lightning Web Components (LWC) to create a dynamic customer community intake form for an important client of our company's new joiner training and orientation program. The form incorporated personalized field rendering based on specific criteria, input validation using LWC's built-in form validation features, and interactive elements such as dropdown menus, date pickers, and auto-suggest fields. Leveraging the reusability and modularity of LWC components, the development time was significantly reduced, saving approximately 60%. The implementation of the dynamic intake form improved data accuracy, reduced administrative effort, and enhanced the overall efficiency of the onboarding process.",
-          ],
+          responsibilities:
+            "I utilized Lightning Web Components (LWC) to create a dynamic customer community intake form for a clients new joiner training and orientation program. The form incorporated personalized field rendering based on specific criteria, input validation using LWC's built-in form validation features, and interactive elements such as dropdown menus, date pickers, and auto-suggest fields. Leveraging the reusability and modularity of LWC components, the development time was significantly reduced, saving approximately 60%. The implementation of the dynamic intake form improved data accuracy, reduced administrative effort, and enhanced the overall efficiency of the onboarding process.",
         },
         {
           title: "Application Development Analyst",
           project: "Salesforce CRM",
           startDate: "02/2020",
           endDate: "11/2021",
-          responsibilities: [
-            "I worked in a project for a insurance company that wanted a complete overhaul of their CRM system to improve operational efficiency. The main requirement was to build a custom CRM solution using Salesforce that mirrored their unique business process. Our first task was to create custom objects in Salesforce to handle data unique to their business. This required a deep understanding of their business model and data requirements. These custom objects allowed us to capture and represent business data that couldn't be handled by Salesforce's standard objects. We used Apex, Salesforce's proprietary language, to implement custom business logic. This included creating classes, triggers, and test cases. Apex triggers were especially important for automating workflows based on certain conditions. This saved significant time as it automated many tasks that were previously manual. Validation rules were created to ensure data integrity by enforcing business rules at the field level. We used Salesforce Object Query Language (SOQL) for querying the Salesforce database, allowing us to generate custom reports based on these queries. Finally, we created custom dashboards using Salesforce's dashboard functionality. These dashboards allowed management to monitor key performance metrics in real-time, providing valuable insights into the business's performance.",
-          ],
+          responsibilities:
+            "I worked in a project for an insurance company that wanted a complete overhaul of their CRM system to improve operational efficiency. The main requirement was to build a custom CRM solution using Salesforce that mirrored their unique business process. Our first task was to create custom objects in Salesforce to handle data unique to their business. This required a deep understanding of their business model and data requirements. These custom objects allowed us to capture and represent business data that couldn't be handled by Salesforce's standard objects. We used Apex, Salesforce's proprietary language, to implement custom business logic. This included creating classes, triggers, and test cases.",
         },
         {
           title: "Application Development Associate",
           project: "Testing",
           startDate: "04/2018",
           endDate: "01/2020",
-          responsibilities: [
-            "Worked as a 3*Certified Salesforce Developer in multiple projects using agile methodology , Integrated CRM with the Service System to decrease manual interactions cutting overhead costs by 30%,Analyzed and built a dynamic customer community intake form for new joiner training and orientation program leveraging Lightning Web Components, saving almost 60% of the time for the same process",
-          ],
+          responsibilities:
+            "I spearheaded the implementation of a component-based approach and automation scripts, reducing maintenance costs by 50%. Additionally, I applied Test Design Automation, ensuring high-quality, timely delivery of applications. I also crafted strategic test plans aligned with client and user requirements, elevating client satisfaction. These experiences strengthened my expertise in test automation, project management, and client relations.",
         },
       ],
     },
@@ -98,26 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row g-0">
                 <div class="col-md-12">
                     <div class="card-body">
-                        <h5 class="card-title">${role.title} at ${
-        experience.company
-      }</h5>
-                        <p class="card-text m-0 p-0">${role.startDate} - ${
-        role.endDate
-      }</p>
-                        <p class="card-text"><small class="text-muted">${
-                          experience.location
-                        }</small></p>
-                        <p class="card-text"><small class="text-muted">${
-                          role.project
-                        }</small></p>
-                        <ul class="list-group list-group-flush">
-                            ${role.responsibilities
-                              .map(
-                                (responsibility) =>
-                                  `<li class="list-group-item">${responsibility}</li>`
-                              )
-                              .join("")}
-                        </ul>
+                        <h5 class="card-title">${role.title} at ${experience.company}</h5>
+                        <p class="card-text m-0 p-0">${role.startDate} - ${role.endDate}</p>
+                        <p class="card-text"><small class="text-muted">${experience.location}</small></p>
+                        <p class="card-text"><small class="text-muted">${role.project}</small></p>
+                        <p class="card-text m-0 p-0">${role.responsibilities}</p>
                     </div>
                 </div>
             </div>
@@ -125,8 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Append the card to the row
       experienceRow.appendChild(card);
     });
-
-    // Append the row to the container
     experienceContainer.appendChild(experienceRow);
   });
 
@@ -134,8 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "PPE Detector",
       duration: "09/2022 - 12/2022",
+      githubUrl: "https://github.com/prachi-kashyap/ppe-detector",
       description:
-        "Developed a PPE (Personal Protective Equipment) web app using the frontend and backend languages. Initiated the project by suggesting the User Interface design using diagrams and write-ups to my team member",
+        "Created a Personal Protective Equipment (PPE) web app by utilizing frontend and backend languages. For the frontend, we employed JavaScript, React, CSS, and Bootstrap to develop a visually appealing and responsive user interface. To convey the UI design to our team member, we used diagrams and write-ups, allowing us to effectively communicate the app's structure and functionality. On the backend, we utilized Python to handle server-side logic and data processing. The project was initiated by suggesting the UI design through comprehensive diagrams and descriptive write-ups, ensuring a clear understanding of the app's intended appearance and features.",
       technologies: [
         "JavaScript",
         "React",
@@ -148,8 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Sentiment Analysis Tool",
       duration: "09/2022 - 12/2022",
+      githubUrl: "https://github.com/prachi-kashyap/SE_554_SentimentAnalysis",
       description:
-        "Proposed and created a website that will take customer reviews/tweets(text) data as input and provide overall sentiment as positive or negative. Learnt streamlit which is an open-source app framework for this project",
+        "Proposed and developed a website that analyzes customer reviews and tweets to determine the overall sentiment as positive or negative. To implement this, I learned and utilized Streamlit, an open-source app framework. Streamlit enabled me to create an interactive and user-friendly interface for the website, making it easy to input text data and receive sentiment analysis results. The website serves as a valuable tool for businesses to understand customer opinions and sentiments. By leveraging Streamlit, I ensured a seamless and efficient user experience while providing accurate sentiment analysis for customer reviews and tweets.",
       technologies: ["Python", "Streamlit"],
     },
   ];
@@ -164,23 +146,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.classList.add("card", "mb-3", "col-md-5", "mx-2");
     card.innerHTML = `
-          <div class="row g-0">
-              <div class="col-md-8">
-                  <div class="card-body">
-                      <h5 class="card-title">${project.title}</h5>
-                      <p class="card-text m-0 p-0">${project.duration}</p>
-                      <p class="card-text">${project.description}</p>
-                      <ul class="list-group list-group-flush">
-                          ${project.technologies
-                            .map(
-                              (tech) =>
-                                `<li class="list-group-item">${tech}</li>`
-                            )
-                            .join("")}
-                      </ul>
-                  </div>
-              </div>
-          </div>
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                    <a href="${project.githubUrl}" target="_blank">
+                    ${project.title}</a>
+                    </h5>
+                    <p class="card-text m-0 p-0">${project.duration}</p>
+                    <p class="card-text">${project.description}</p>
+                    <p class="card-text"><bold class="text-muted">Technologies used: ${project.technologies.join(
+                      ", "
+                    )}</small></p>
+                </div>
+           </div>
+        </div>
       `;
     projectsContainer.appendChild(card);
   });
@@ -202,12 +182,3 @@ document
 
     alert("Thank you for your message!");
   });
-
-function toggleTheme() {
-  var body = document.body;
-  if (body.classList.contains("dark-theme")) {
-    body.classList.remove("dark-theme");
-  } else {
-    body.classList.add("dark-theme");
-  }
-}
