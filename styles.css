@@ -34,9 +34,12 @@ a {
   color: black;
 }
 
+.heading {
+  text-align: center;
+}
 .contact-logo {
   width: 70px;
-  height: 40px;
+  height: 50px;
 }
 
 .sections {
@@ -54,6 +57,7 @@ a {
 
 .custom-button.btn-primary {
   background-color: var(--black) !important;
+  margin: 15px;
 }
 
 .project-title {
@@ -67,4 +71,8 @@ a {
 .picture {
   border-radius: 10%;
   filter: grayscale(30%);
+}
+
+.title-URL {
+  color: black;
 }

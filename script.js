@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="card-body">
                         <h5 class="card-title">${role.title} at ${experience.company}</h5>
                         <p class="card-text m-0 p-0">${role.startDate} - ${role.endDate}</p>
-                        <p class="card-text"><small class="text-muted">${experience.location}</small></p>
-                        <p class="card-text"><small class="text-muted">${role.project}</small></p>
+                        <p class="card-text"><small>${experience.location}</small></p>
+                        <p class="card-text"><small>${role.project}</small></p>
                         <p class="card-text m-0 p-0">${role.responsibilities}</p>
                     </div>
                 </div>
@@ -150,12 +150,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-md-12">
                     <div class="card-body">
                     <h5 class="card-title">
-                    <a href="${project.githubUrl}" target="_blank">
+                    <a class="title-URL" href="${
+                      project.githubUrl
+                    }" target="_blank">
                     ${project.title}</a>
                     </h5>
                     <p class="card-text m-0 p-0">${project.duration}</p>
                     <p class="card-text">${project.description}</p>
-                    <p class="card-text"><bold class="text-muted">Technologies used: ${project.technologies.join(
+                    <p class="card-text"><bold>Technologies used: ${project.technologies.join(
                       ", "
                     )}</small></p>
                 </div>
