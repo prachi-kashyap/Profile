@@ -31,7 +31,8 @@ header {
 
 body {
   padding-top: 80px;
-  background-color: var(--light-gray-2);
+  /* background-color: var(--light-gray-2); */
+  background-color: var(--light-gray-3);
 }
 
 .heading {
@@ -66,10 +67,6 @@ body {
   color: var(--black);
 }
 
-.card {
-  background-color: var(--light-gray-4);
-}
-
 .picture {
   border-radius: 10%;
   filter: grayscale(30%);
@@ -82,4 +79,9 @@ body {
 
 .logos {
   margin-top: 25%;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
 }
