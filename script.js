@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dateStart: "July 2014",
       dateEnd: "April 2018",
       gpa: "3.70",
-      logo: "../images/kiitlogo.png",
+      logo: "./images/kiitlogo.png",
     },
     {
       degreeName: "Master of Science in Computer Science",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dateStart: "September 2022",
       dateEnd: "March 2024",
       gpa: "3.83",
-      logo: "../images/psu.png",
+      logo: "./images/psu.png",
     },
   ];
 
