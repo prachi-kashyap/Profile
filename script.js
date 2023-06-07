@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row g-0">
                 <div class="col-md-12">
                     <div class="card-body">
-                        <h5 class="card-title">${role.title} at ${experience.company}</h5>
+                        <h3 class="card-title">${role.title} at ${experience.company}</h3>
                         <p class="card-text m-0 p-0">${role.startDate} - ${role.endDate}</p>
                         <p class="card-text"><small>${experience.location}</small></p>
                         <p class="card-text"><small>${role.project}</small></p>
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "PPE Detector",
       duration: "09/2022 - 12/2022",
-      githubUrl: "https://github.com/prachi-kashyap/ppe-detector",
+      url: "https://main.dx26wen16nrwi.amplifyapp.com/",
       description:
         "Created a Personal Protective Equipment (PPE) web app by utilizing frontend and backend languages. For the frontend, we employed JavaScript, React, CSS, and Bootstrap to develop a visually appealing and responsive user interface. To convey the UI design to our team member, we used diagrams and write-ups, allowing us to effectively communicate the app's structure and functionality. On the backend, we utilized Python to handle server-side logic and data processing. The project was initiated by suggesting the UI design through comprehensive diagrams and descriptive write-ups, ensuring a clear understanding of the app's intended appearance and features.",
       technologies: [
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Sentiment Analysis Tool",
       duration: "09/2022 - 12/2022",
-      githubUrl: "https://github.com/prachi-kashyap/SE_554_SentimentAnalysis",
+      url: "https://github.com/prachi-kashyap/SE_554_SentimentAnalysis",
       description:
         "Proposed and developed a website that analyzes customer reviews and tweets to determine the overall sentiment as positive or negative. To implement this, I learned and utilized Streamlit, an open-source app framework. Streamlit enabled me to create an interactive and user-friendly interface for the website, making it easy to input text data and receive sentiment analysis results. The website serves as a valuable tool for businesses to understand customer opinions and sentiments. By leveraging Streamlit, I ensured a seamless and efficient user experience while providing accurate sentiment analysis for customer reviews and tweets.",
       technologies: ["Python", "Streamlit"],
@@ -149,12 +149,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row g-0">
                 <div class="col-md-12">
                     <div class="card-body">
-                    <h5 class="card-title">
-                    <a class="title-URL" href="${
-                      project.githubUrl
-                    }" target="_blank">
+                    <h3 class="card-title">
+                    <a class="title-URL" href="${project.url}" target="_blank">
                     ${project.title}</a>
-                    </h5>
+                    </h3>
                     <p class="card-text m-0 p-0">${project.duration}</p>
                     <p class="card-text">${project.description}</p>
                     <p class="card-text"><bold>Technologies used: ${project.technologies.join(
@@ -173,9 +171,10 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+    let formData = new FormData(event.target);
+    let name = formData.get("name");
+    let email = formData.get("email");
+    let message = formData.get("message");
 
     if (!name || !email || !message) {
       alert("Please fill out all fields.");

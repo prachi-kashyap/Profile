@@ -12,6 +12,10 @@
   --text-color: #080808;
   --background-color: #fefefe;
   --accent-color: #a2106d;
+  --light-gray-1: rgb(189, 189, 189);
+  --light-gray-2: #dfdfdf;
+  --light-gray-3: #ffffff;
+  --light-gray-4: #dadada;
 }
 
 header {
@@ -21,21 +25,18 @@ header {
 .title-box {
   width: 100%;
   margin: 0px;
-  background-color: rgb(189, 189, 189);
-  color: var(--black) !important;
+  background-color: var(--light-gray-1);
+  color: var(--black);
 }
 
 body {
   padding-top: 80px;
-  background-color: #dfdfdf !important;
-}
-
-a {
-  color: black;
+  background-color: var(--light-gray-2);
 }
 
 .heading {
   text-align: center;
+  text-decoration: underline;
 }
 .contact-logo {
   width: 70px;
@@ -47,25 +48,24 @@ a {
   margin-top: -70px;
 }
 
-.navbar-nav .nav-link {
-  color: #ffffff;
+.nav-link {
+  color: var(--light-gray-3);
 }
 
-.navbar-nav .nav-link:hover {
-  color: black;
+.nav-link:hover {
+  color: var(--black);
 }
 
 .custom-button.btn-primary {
-  background-color: var(--black) !important;
-  margin: 15px;
+  background-color: var(--black);
 }
 
 .project-title {
-  color: var(--black) !important;
+  color: var(--black);
 }
 
 .card {
-  background-color: #dadada !important;
+  background-color: var(--light-gray-4);
 }
 
 .picture {
@@ -74,5 +74,9 @@ a {
 }
 
 .title-URL {
-  color: black;
+  color: var(--black);
+}
+
+.logos {
+  margin-top: 25%;
 }

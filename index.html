@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prachi Kashyap</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,6 +17,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
+    <script src="script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -41,44 +41,47 @@
         </div>
       </nav>
     </div>
-    <h1 class="pl-5 heading">PRACHI KASHYAP</h1>
-    <p class="pl-5"></p>
     <section id="about" class="sections">
+      <h1 class="heading">PRACHI KASHYAP</h1>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="align-items-center justify-content-center mt-3 mb-3">
+          <img
+            class="picture image_about"
+            src="../images/prachi.jpg"
+            alt="A casual portrait of Prachi Kashyap"
+            width="300"
+            height="300"
+          />
+        </div>
+      </div>
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-6 text-justify">
-            I am a dedicated computer science professional with a focus on IT
-            and Salesforce development. My education includes an MS in Computer
-            Science from Portland State University and a Bachelor's in IT from
-            Kalinga Institute of Industrial Technology. I'm proficient in a wide
-            range of programming languages and software systems. My career has
-            spanned various roles at Accenture in India, where I've made
-            significant contributions as a certified Salesforce Developer and
-            Quality Engineering Senior Analyst, consistently delivering
-            innovative solutions that drive cost efficiencies. I'm proud to have
-            my work recognized with the Accenture Celebrate Excellence Award and
-            Apex Award. My project leadership includes the development of the
-            PPE Detector web app and a Sentiment Analysis Tool. As a mentor and
-            a team player, I bring a blend of experience, technical prowess, and
-            leadership to any tech-focused endeavor.
+          <div class="col-12">
+            <p class="text-left">
+              I am a dedicated computer science professional with a focus on IT
+              and Salesforce development. My education includes an MS in
+              Computer Science from Portland State University and a Bachelor's
+              in IT from Kalinga Institute of Industrial Technology. I'm
+              proficient in a wide range of programming languages and software
+              systems. My career has spanned various roles at Accenture in
+              India, where I've made significant contributions as a certified
+              Salesforce Developer and Quality Engineering Senior Analyst,
+              consistently delivering innovative solutions that drive cost
+              efficiencies. I'm proud to have my work recognized with the
+              Accenture Celebrate Excellence Award and Apex Award. My project
+              leadership includes the development of the PPE Detector web app
+              and a Sentiment Analysis Tool. As a mentor and a team player, I
+              bring a blend of experience, technical prowess, and leadership to
+              any tech-focused endeavor.
+            </p>
+            <a
+              class="btn btn-primary custom-button mt-1 mb-3 mr-2"
+              href="../images/Prachi_Kashyap.pdf"
+              target="_blank"
+            >
+              View my Resume
+            </a>
           </div>
-          <div class="col-6 align-items-center justify-content-center">
-            <img
-              class="picture"
-              class="image_about"
-              src="../images/prachi.jpg"
-              alt="A casual portrait of Prachi Kashyap"
-              width="250"
-              height="250"
-            />
-          </div>
-          <a
-            href="../images/Prachi Kashyap.pdf"
-            target="_blank"
-            class="btn btn-primary custom-button mt-3 mb-3 mr-2"
-          >
-            View my Resume
-          </a>
         </div>
       </div>
     </section>
@@ -140,6 +143,7 @@
                   type="text"
                   class="form-control"
                   id="name"
+                  name="name"
                   placeholder="Name"
                 />
               </div>
@@ -149,12 +153,18 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   placeholder="name@example.com"
                 />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary custom-button">
                 Submit
@@ -164,31 +174,24 @@
           </div>
           <div class="col-md-6">
             <div
-              class="d-flex justify-content-around align-items-center flex-wrap"
+              class="d-flex justify-content-around align-items-center flex-wrap logos"
             >
               <a
                 href="https://www.linkedin.com/in/prachikashyap/"
+                aria-label="linkedin"
                 target="_blank"
               >
-                <i
-                  class="fa fa-linkedin fa-4x"
-                  aria-hidden="true"
-                  alt="Logo of LinkedIn"
-                ></i>
+                <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/prachi-kashyap" target="_blank">
-                <i
-                  class="fa fa-github fa-4x"
-                  aria-hidden="true"
-                  alt="Logo of github"
-                ></i>
+              <a
+                href="https://github.com/prachi-kashyap"
+                aria-label="github"
+                target="_blank"
+              >
+                <i class="fa fa-github fa-4x" aria-hidden="true"></i>
               </a>
-              <a href="mailto:pk23@pdx.edu" target="_blank">
-                <i
-                  class="fa fa-envelope fa-4x"
-                  aria-hidden="true"
-                  alt="Logo of mail"
-                ></i>
+              <a href="mailto:pk23@pdx.edu" aria-label="mail" target="_blank">
+                <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
               </a>
             </div>
           </div>
