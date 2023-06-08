@@ -31,8 +31,6 @@ You can also visit the live site at `https://prachi-kashyap.github.io/Profile/`
 - CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
 - Bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
-For particular references please refer to the journal.
-
 ## Deployment
 
 The website is currently deployed at `https://prachi-kashyap.github.io/Profile/`
