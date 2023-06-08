@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         `;
-      // Append the card to the row
       experienceRow.appendChild(card);
     });
     experienceContainer.appendChild(experienceRow);
@@ -166,20 +165,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    let formData = new FormData(event.target);
-    let name = formData.get("name");
-    let email = formData.get("email");
-    let message = formData.get("message");
+      let formData = new FormData(event.target);
+      let name = formData.get("name");
+      let email = formData.get("email");
+      let message = formData.get("message");
 
-    if (!name || !email || !message) {
-      alert("Please fill out all fields.");
-      return false;
-    }
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return false;
+      }
 
-    alert("Thank you for your message!");
-  });
+      alert("Thank you for your message!");
+    });
+});
