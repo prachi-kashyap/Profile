@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       universityWebsite: "https://www.pdx.edu/",
       dateStart: "September 2022",
       dateEnd: "March 2024",
-      gpa: "3.83",
+      gpa: "3.92",
       logo: "./images/psu.png",
     },
   ];
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       location: "Gurugram, India",
       roles: [
         {
-          title: "Quality Engineering Senior Analyst",
+          title: "Senior Salesforce Developer",
           project: "Salesforce Development",
           startDate: "12/2021",
           endDate: "07/2022",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "I utilized Lightning Web Components (LWC) to create a dynamic customer community intake form for a clients new joiner training and orientation program. The form incorporated personalized field rendering based on specific criteria, input validation using LWC's built-in form validation features, and interactive elements such as dropdown menus, date pickers, and auto-suggest fields. Leveraging the reusability and modularity of LWC components, the development time was significantly reduced, saving approximately 60%. The implementation of the dynamic intake form improved data accuracy, reduced administrative effort, and enhanced the overall efficiency of the onboarding process.",
         },
         {
-          title: "Application Development Analyst",
+          title: "Salesforce Developer",
           project: "Salesforce CRM",
           startDate: "02/2020",
           endDate: "11/2021",
@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "I worked in a project for an insurance company that wanted a complete overhaul of their CRM system to improve operational efficiency. The main requirement was to build a custom CRM solution using Salesforce that mirrored their unique business process. Our first task was to create custom objects in Salesforce to handle data unique to their business. This required a deep understanding of their business model and data requirements. These custom objects allowed us to capture and represent business data that couldn't be handled by Salesforce's standard objects. We used Apex, Salesforce's proprietary language, to implement custom business logic. This included creating classes, triggers, and test cases.",
         },
         {
-          title: "Application Development Associate",
-          project: "Testing",
+          title: "Salesforce Developer",
+          project: "Administrator/Developer",
           startDate: "04/2018",
           endDate: "01/2020",
           responsibilities:
-            "I spearheaded the implementation of a component-based approach and automation scripts, reducing maintenance costs by 50%. Additionally, I applied Test Design Automation, ensuring high-quality, timely delivery of applications. I also crafted strategic test plans aligned with client and user requirements, elevating client satisfaction. These experiences strengthened my expertise in test automation, project management, and client relations.",
+            "I revamped Salesforce CRM by setting up its data structures, optimizing user interfaces, and crafting detailed reports and dashboards to enhance user decision-making. I boosted data security through meticulous configuration of profiles and sharing settings. My work with automation, using validation rules, process builders, and Apex triggers, streamlined operations, while my expertise in SOQL and SOSL cut data retrieval times by 20%. By working closely with various teams to pinpoint their needs, I managed to achieve a 95% success rate in delivering projects on schedule, demonstrating a blend of technical skill and collaborative prowess in improving CRM efficiency and user experience.",
         },
       ],
     },
@@ -132,6 +132,22 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "Proposed and developed a website that analyzes customer reviews and tweets to determine the overall sentiment as positive or negative. To implement this, I learned and utilized Streamlit, an open-source app framework. Streamlit enabled me to create an interactive and user-friendly interface for the website, making it easy to input text data and receive sentiment analysis results. The website serves as a valuable tool for businesses to understand customer opinions and sentiments. By leveraging Streamlit, I ensured a seamless and efficient user experience while providing accurate sentiment analysis for customer reviews and tweets.",
       technologies: ["Python", "Streamlit"],
+    },
+    {
+      title: "Weather and Information App",
+      duration: "09/2023 - 12/2023",
+      url: "https://final-v62o4ubsxa-uw.a.run.app",
+      description:
+        "I took charge of creating a state-of-the-art web app that blends Python, HTML, and advanced API use to give live weather updates and map visuals. Using Google Maps Geolocation, OpenAI, and OpenWeatherMap APIs, this tool offers accurate weather forecasts along with AI-crafted stories, making weather info not just useful but also engaging. The app's design is smart, working smoothly on any device, which bumped up user happiness by 20%. It's more than a weather app; it's about understanding and catering to what users really want with innovation and flair.",
+      technologies: ["Python", "HTML", "API"],
+    },
+    {
+      title: "Value Prediction App",
+      duration: "12/2023 - Present",
+      url: "https://github.com/prachi-kashyap/Value_Prediction",
+      description:
+        "This web application stands as a testament to innovation, integrating Python, HTML, and advanced API integration to revolutionize real-time weather forecasting and geographic visualization. By leveraging the power of Google Maps Geolocation, OpenAI, and OpenWeatherMap APIs, it not only delivers precise weather details but also enriches user experience with AI-generated content, making information not just accessible but also captivating. Designed to adapt seamlessly across devices, the application significantly enhanced user engagement, evidenced by a 20% increase in user satisfaction. This project represents a forward leap in meeting user needs, blending technical excellence with a keen understanding of digital interaction trends, thereby setting a new benchmark in user-centric application development.",
+      technologies: ["Python", "HTML", "API"],
     },
   ];
 
